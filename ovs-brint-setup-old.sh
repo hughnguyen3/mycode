@@ -1,4 +1,4 @@
-#!/bin/bash
+[200~#!/bin/bash
 
 # create an OvS bridge called donut-plains
 sudo ovs-vsctl add-br donut-plains
@@ -17,8 +17,8 @@ sudo ip link set bowser netns bowser
 
 # bring interface UP in bowser and peach
 sudo ip netns exec peach ip link set dev peach up
-sudo ip netns exec peach ip link set dev lo up
 sudo ip netns exec bowser ip link set dev bowser up
+sudo ip netns exec peach ip link set dev lo up
 sudo ip netns exec bowser ip link set dev lo up
 
 # add IP address to interface
